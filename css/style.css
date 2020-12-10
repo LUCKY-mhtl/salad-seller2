@@ -1,0 +1,238 @@
+@font-face {
+    font-family: 'GT Alpina';
+    src: local(GT Alpina);
+    src: url(./fonts/GT-Alpina-Medium-Italic.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'GT America';
+    src: local(GT America);
+    src: url(./fonts/GT-America-Standard-Medium.woff) format('woff'),
+    url(./fonts/GT-America-Standard-Medium-Italic.woff) format('woff');
+}
+
+
+
+header {
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+}
+
+/* 햄버거 메뉴 */
+
+.ham {
+    display: inline-block;
+    position: fixed;
+    float: left;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.bar1, .bar2, .bar3 {
+    display: block;
+    width: 28px;
+    margin-bottom: 6px;
+    height: 4px;
+    transition: all 0.3s ease-in-out;
+    background-color: black;
+}
+
+.change .bar1 {
+ transform: rotate(45deg) translate(8px, 8px);
+ }
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+ transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* dropdown 메뉴 */
+
+
+/* 샐셀 홈버튼 */
+
+.home {
+    float: left;
+    position: fixed;
+    padding: 10px 0 0 0;
+    left: 26%;
+}
+
+.home a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.home span {
+    font-family: 'GT America', sans-serif;
+    font-size: 26pt;
+    letter-spacing: -1px;
+}
+
+.insta img{
+    width: 30px;
+    padding: 16px 0px 20px 0px;
+    float: left;
+    position: fixed;
+    right: 20px;
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    margin: 0;
+}
+
+.main_cover {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+}
+
+.main_cover img{
+    width: 100%;
+    height: auto;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menu_category span {
+    font-family: 'GT America', sans-serif;
+    font-size: 18pt;
+    text-align: center;
+}
+
+.marquee {
+    height: 50px;
+    overflow: hidden;
+    position: relative;
+    top: 75px;
+}
+
+.marquee div {
+    display: block;
+    width: 200%;
+    height: 60px;
+    position: absolute;
+    overflow: hidden;
+    animation: marquee 5s linear infinite;
+}
+
+.marquee span{
+    font-family: 'GT America', sans-serif;
+    font-size: 16pt;
+    float: left;
+    width: 50%;
+}
+
+@keyframes marquee {
+    0% { left: 0; }
+    100% { left: -100%; }
+  }
+
+
+.order img{
+    width: 72%;
+    float: left;
+    position: relative;
+    top: 90px;
+    left: 10%;
+    margin-bottom: 100px;
+}
+
+.delivery_illust img{
+    width: 68%;
+    float: left;
+    position: relative;
+    top: 0px;
+    left: 14%;
+    margin-bottom: 100px;
+}
+
+.order_title {
+    font-family: 'GT Alpina', serif;
+    font-size: 60pt;
+    float: left;
+    text-align: center;
+    letter-spacing: -3px;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.order_title_kr span{
+    font-size: 12pt;
+    float: left;
+    text-align: center;
+    width: 100%;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-bottom: 30px;
+}
+
+.order_contents{
+    border-top: solid black 1px;
+    padding: 20px 10px 0 10px;
+    float: left;
+    margin-bottom: 60px;
+}
+
+.order_contents span{
+    font-size: 12pt;
+    line-height: 1.6;
+    text-align: left;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.detail_txt {
+    padding-left: 20px;
+}
+
+.detail_txt span{
+    font-size: 12pt;
+    word-break: keep-all;
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 1.6;
+}
+
+.info_txt {
+    float: left;
+    width: 100%;
+    padding: 0 10px 20px 10px;
+}
+
+.info_txt_kr {
+    width: 45%;
+    float: left;
+    font-size: 8pt;
+    word-break: keep-all;
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 1.5;
+}
+
+.info_txt_en {
+    float: left;
+    width: 45%;
+    padding-left: 10px;
+    font-size: 8pt;
+    word-break: keep-all;
+    font-family: 'GT America', sans-serif;
+    line-height: 1.5;
+}
+
+.container {
+    overflow-y: scroll;
+}
