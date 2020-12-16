@@ -7,52 +7,98 @@
     
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
 
 </head>
+
+<style>
+    header { 
+    background: #e6321e;
+}
+
+</style>
+
+
+
 <body>
-
-
-    <header>
-        <div class="ham" onclick="myFunction(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-            </a>
-        </div>
-
-        <div class="home">
-           <a href="index.html">
-               <span>Salad Seller</span>
-           </a>
-       </div>
-   
-       <div class="insta">
-           <a href="https://www.instagram.com/saladseller/">
-           <img src="./img/main/insta.svg">
-           </a>
-       </div>
-       
-       </header>
-
-
-
-
     <div class="wrapper">
-        <div class="container">
-           <div class="main_cover">
-            <img src="./img/main/main_cover.svg">
-          </div>
+
+      <header>
+            <div class="header-inner">
+            <div class="menu-item ham">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+
+            <div class="menu-item home">
+                <a href="index.html">
+                    <span>Salad Seller</span>
+                </a>
+            </div>
+
+            <div class="menu-item insta">
+                <img src="./img/main/insta.svg">
+            </div>
+
+            <div class="navi">
+                <div class="navi-item">
+                    <a href="menu.html">
+                        Menu
+                    </a>
+                </div>
+                <div class="navi-item">
+                    <a href="#none">
+                        Shop
+                    </a>
+                </div>
+                <div class="navi-item">
+                    <a href="order.html">
+                        Order
+                    </a>
+                </div>
+                <div class="navi-item">
+                    <a href="news.html">
+                        News
+                    </a>
+                </div>
+                <div class="navi-item">
+                    <a href="info.html">
+                        Info
+                    </a>
+                </div>
+            </div>
+        </div>
+     </header>
+
+        <div class="main">
+        <div class="main-bg">
+            <img src="./img/main/bg.png" alt="">
+        </div>
+        <div class="main-con">
+            <img src="./img/main/con.png" alt="">
+        </div>
+        </div>
+    </div>
     </div>
 
 
-
-
     <script>
-        function myFunction(x) {
-          x.classList.toggle("change");
-        }
-        </script>
+
+        $(document).ready(function(){
+
+        });
+
+        $('.ham').on('click', function(){
+            $(this).toggleClass('change');
+            $('.navi').toggleClass('on');
+        });
+        
+    </script>
 
 </body>
 </html>

@@ -7,39 +7,72 @@
 
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.4.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" />
 
 </head>
 <body>
-    <header>
-        <div class="ham" onclick="myFunction(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-            </a>
-        </div>
-
-        <div class="home">
-           <a href="index.html">
-               <span>Salad Seller</span>
-           </a>
-       </div>
-   
-       <div class="insta">
-           <a href="https://www.instagram.com/saladseller/">
-           <img src="./img/main/insta.svg">
-           </a>
-       </div>
-       
-       <div class="menu_category">
-        <span>SALAD, SANDWICH, SOUP, ADD, <br>DRINKS, Download PDF</span>
-    </div>
-
-       </header>
 
        <div class="wrapper">
-        <div class="container">
 
+        <header>
+            <div class="header-inner">
+                <div class="menu-item ham">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+    
+                <div class="menu-item home">
+                    <a href="index.html">
+                        <span>Salad Seller</span>
+                    </a>
+                </div>
+    
+                <div class="menu-item insta">
+                    <img src="./img/main/insta.svg">
+                </div>
+    
+                <div class="navi">
+                    <div class="navi-item">
+                        <a href="menu.html">
+                            Menu
+                        </a>
+                    </div>
+                    <div class="navi-item">
+                        <a href="#none">
+                            Shop
+                        </a>
+                    </div>
+                    <div class="navi-item">
+                        <a href="order.html">
+                            Order
+                        </a>
+                    </div>
+                    <div class="navi-item">
+                        <a href="news.html">
+                            News
+                        </a>
+                    </div>
+                    <div class="navi-item">
+                        <a href="info.html">
+                            Info
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+           </header>
+
+           <div class="menu_category">
+            <span>SALAD, SANDWICH, SOUP, ADD, <br>
+                DRINKS, Download PDF</span>
+        </div>
+
+        <div class="container">
 
 
             <div class="menu_container">
@@ -63,11 +96,11 @@
                 </div>
             </div>
                 <div class="menu_pic">
-                    <img src="./img/main/menu/sal_veggie.jpg">
+                    <img src="./img/menu/sal_veggie.jpg">
                 </div>
                 <div class="ingredients">
-                    <span>루꼴라, 케일, 시금치, 단호박, 당근, 브로콜리, 토마토, 올리브, 후무스, 호두, 레몬 타히니 드레싱.<br>
-                    <span>Arugula, Kale, Spinach, Pumpkin, Carrot, Broccoli, Tomato, Olive, Hummus, Walnut, Lemon Tahini Dressing.</span>
+                    <span>루꼴라, 케일, 시금치, 단호박, 당근, 브로콜리, 토마토, 올리브, 후무스, 아몬드, 레몬 타히니 드레싱.<br>
+                    <span>Arugula, Kale, Spinach, Pumpkin, Carrot, Broccoli, Tomato, Olive, Hummus, Almond, Lemon Tahini Dressing.</span>
                 </div>
             </div>
 
@@ -86,7 +119,7 @@
                 </div>
             </div>
                 <div class="menu_pic">
-                    <img src="./img/main/menu/sal_mini_fruit.jpg">
+                    <img src="./img/menu/sal_mini_fruit.jpg">
                 </div>
                 <div class="ingredients">
                     <span>루꼴라, 시금치, 사과, 오렌지, 포도, 제철 과일, 피칸, 건크랜베리, 레몬 드레싱.<br>
@@ -106,7 +139,7 @@
                 </div>
             </div>
                 <div class="menu_pic">
-                    <img src="./img/main/menu/sal_caesar.jpg">
+                    <img src="./img/menu/sal_caesar.jpg">
                 </div>
                 <div class="ingredients">
                     <span>로메인, 케일, 닭 안심, 사과, 토마토, 레몬, 그라나 파다노, 후추, 시저 드레싱.<br>
@@ -129,7 +162,7 @@
                 </div>
             </div>
                 <div class="menu_pic">
-                    <img src="./img/main/menu/sal_quinoa.jpg">
+                    <img src="./img/menu/sal_quinoa.jpg">
                 </div>
                 <div class="ingredients">
                     <span>루꼴라, 시금치, 퀴노아, 병아리 콩, 닭 안심, 토마토, 브로콜리, 옥수수, 체다치즈, 건크랜베리, 바질 페스토 드레싱.<br>
@@ -152,7 +185,7 @@
                 </div>
             </div>
                 <div class="menu_pic">
-                    <img src="./img/main/menu/sal_browngrain.jpg">
+                    <img src="./img/menu/sal_browngrain.jpg">
                 </div>
                 <div class="ingredients">
                     <span>루꼴라, 케일, 시금치, 귀리, 수수, 병아리 콩, 단호박, 사과, 피칸, 페타 치즈, 발사믹 글레이즈, 발사믹 드레싱.<br>
@@ -176,7 +209,7 @@
                 </div>
             </div>
                 <div class="menu_pic">
-                    <img src="./img/main/menu/sal_avo.jpg">
+                    <img src="./img/menu/sal_avo.jpg">
                 </div>
                 <div class="ingredients">
                     <span>로메인, 케일, 베이컨 크럼블, 아보카도, 토마토, 옥수수, 피스타치오, 헴프 씨드, 후추, 치즈 드레싱.<br>
@@ -197,7 +230,7 @@
                 </div>
             </div>
                 <div class="menu_pic">
-                    <img src="./img/main/menu/sal_warm_avo.jpeg">
+                    <img src="./img/menu/sal_warm_avo.jpeg">
                 </div>
                 <div class="ingredients">
                     <span>루꼴라, 시금치, 아보카도, 브로콜리, 당근, 토마토, 베이컨, 치폴레 소스, 체다 치즈, 파슬리, 후추, 바질 페스토 드레싱.<br>
@@ -225,7 +258,7 @@
 
                 </div>
                     <div class="menu_pic">
-                        <img src="./img/main/menu/sal_peach_orange.jpg">
+                        <img src="./img/menu/sal_peach_orange.jpg">
                     </div>
                     <div class="ingredients">
                         <span>루꼴라, 시금치, 아보카도, 브로콜리, 당근, 토마토, 베이컨, 치폴레 소스, 체다 치즈, 파슬리, 후추, 바질 페스토 드레싱.<br>
@@ -251,7 +284,7 @@
                     <div class="seasonal">* Seasonal: Summer, Fall</div>
                 </div>
                     <div class="menu_pic">
-                        <img src="./img/main/menu/sal_fig.jpg">
+                        <img src="./img/menu/sal_fig.jpg">
                     </div>
                     <div class="ingredients">
                         <span>루꼴라, 시금치, 무화과, 오이, 리코타 치즈, 건청포도, 피스타치오, 피칸, 아몬드, 타임, 꿀, 허니 머스타드 드레싱.<br>
@@ -276,7 +309,7 @@
                     <div class="seasonal">* Seasonal: Winter, Spring</div>
                 </div>
                     <div class="menu_pic">
-                        <img src="./img/main/menu/empty01.jpg">
+                        <img src="./img/menu/empty01.jpg">
                     </div>
                     <div class="ingredients">
                         <span>루꼴라, 시금치, 딸기, 블루베리, 리코타 치즈, 건청포도, 피스타치오, 피칸, 아몬드, 꿀, 발사믹 글레이즈, 발사믹 드레싱.<br>
@@ -312,7 +345,7 @@
                     </div>
                 </div>
                     <div class="menu_pic">
-                        <img src="./img/main/menu/sand_apple.jpg">
+                        <img src="./img/menu/sand_apple.jpg">
                     </div>
                     <div class="ingredients">
                         <span>호두 식빵, 햄, 에멘탈 치즈, 사과, 적양파, 루꼴라, 엑스트라 버진 올리브 오일, 후추, 갈릭 머스타드 마요네즈.<br>
@@ -336,7 +369,7 @@
                     </div>
                 </div>
                     <div class="menu_pic">
-                        <img src="./img/main/menu/sand_bacon_chili.jpg">
+                        <img src="./img/menu/sand_bacon_chili.jpg">
                     </div>
                     <div class="ingredients">
                         <span>호두 식빵, 베이컨, 체다 치즈, 아보카도, 적양파, 루꼴라, 크러쉬드 레드페퍼, 칠리 마요네즈.<br>
@@ -356,7 +389,7 @@
                     </div>
                 </div>
                     <div class="menu_pic">
-                        <img src="./img/main/menu/sand_grilled_vege.jpg">
+                        <img src="./img/menu/sand_grilled_vege.jpg">
                     </div>
                     <div class="ingredients">
                         <span>치아바타, 에멘탈 치즈, 새송이 버섯, 파프리카, 주키니, 가지, 적양파, 그라나 파다노, 발사믹 글레이즈, 바질 페스토.<br>
@@ -376,7 +409,7 @@
                     </div>
                 </div>
                     <div class="menu_pic">
-                        <img src="./img/main/menu/sand_eggleeve.jpg">
+                        <img src="./img/menu/sand_eggleeve.jpg">
                     </div>
                     <div class="ingredients">
                         <span>치아바타, 닭 안심, 계란, 에멘탈 치즈, 그라나 파다노, 올리브, 양파, 로메인, 후추, 갈릭 머스타드 마요네즈.<br>
@@ -406,7 +439,7 @@
                     </div>
                 </div>
                     <div class="menu_pic">
-                        <img src="./img/main/menu/soup_chipotle.jpg">
+                        <img src="./img/menu/soup_chipotle.jpg">
                     </div>
                     <div class="ingredients">
                         <span>돼지고기, 마늘, 감자, 양파, 당근, 파프리카, 토마토, 병아리 콩, 렌틸, 오레가노, 소금, 후추, 치폴레, 체다치즈, 파슬리.<br>
@@ -430,7 +463,7 @@
                     </div>
                 </div>
                     <div class="menu_pic">
-                        <img src="./img/main/menu/soup_pump.jpg">
+                        <img src="./img/menu/soup_pump.jpg">
                     </div>
                     <div class="ingredients">
                         <span>단호박, 고구마, 양파, 버터, 생크림, 소금, 후추, 파슬리, 계피가루, 호박씨.<br>
@@ -501,7 +534,7 @@
                 </div>
             </div>
                 <div class="menu_pic">
-                    <img src="./img/main/menu/drink_americano.jpg">
+                    <img src="./img/menu/drink_americano.jpg">
                 </div>
                 <div class="ingredients">
                     <span>묵직함 / 산뜻함 / 디카페인<br>
@@ -521,7 +554,7 @@
                 </div>
             </div>
                 <div class="menu_pic">
-                    <img src="./img/main/menu/drink_ice_americano.jpg">
+                    <img src="./img/menu/drink_ice_americano.jpg">
                 </div>
                 <div class="ingredients">
                     <span>묵직함 / 산뜻함 / 디카페인<br>
@@ -541,7 +574,7 @@
                 </div>
             </div>
                 <div class="menu_pic">
-                    <img src="./img/main/menu/empty03.jpg">
+                    <img src="./img/menu/empty03.jpg">
                 </div>
                 <div class="ingredients">
                     <span>에스프레소, 코코넛 워터.<br>
@@ -561,7 +594,7 @@
                 </div>
             </div>
                 <div class="menu_pic">
-                    <img src="./img/main/menu/empty02.jpg">
+                    <img src="./img/menu/empty02.jpg">
                 </div>
                 <div class="ingredients">
                     <span>에스프레소, 코코넛 밀크.<br>
@@ -584,7 +617,7 @@
                 </div>
             </div>
                 <div class="menu_pic">
-                    <img src="./img/main/menu/drink_whitetea.jpg">
+                    <img src="./img/menu/drink_whitetea.jpg">
                 </div>
                 <div class="ingredients">
                     <span>백차 / 청차 / 보이 숙차<br>
@@ -607,7 +640,7 @@
                 </div>
             </div>
                 <div class="menu_pic">
-                    <img src="./img/main/menu/empty01.jpg">
+                    <img src="./img/menu/empty01.jpg">
                 </div>
                 <div class="ingredients">
                     <span>백차 / 청차 / 보이 숙차<br>
@@ -630,7 +663,7 @@
                 </div>
             </div>
                 <div class="menu_pic">
-                    <img src="./img/main/menu/drink_orange_juice.jpg">
+                    <img src="./img/menu/drink_orange_juice.jpg">
                 </div>
             </div>
 
@@ -649,7 +682,7 @@
                 </div>
             </div>
                 <div class="menu_pic">
-                    <img src="./img/main/menu/drink_honey_apple_cider.jpg">
+                    <img src="./img/menu/drink_honey_apple_cider.jpg">
                 </div>
                 <div class="ingredients">
                     <span>애플 사이다 식초, 꿀, 사과 시럽, 탄산수, 사과 슬라이스.<br>
@@ -672,7 +705,7 @@
                 </div>
             </div>
                 <div class="menu_pic">
-                    <img src="./img/main/menu/drink_banana_vinegar.jpg">
+                    <img src="./img/menu/drink_banana_vinegar.jpg">
                 </div>
                 <div class="ingredients">
                     <span>바나나 식초, 바나나 시럽, 탄산수, 로즈마리.<br>
@@ -695,7 +728,7 @@
                 </div>
             </div>
                 <div class="menu_pic">
-                    <img src="./img/main/menu/drink_switcel.jpg">
+                    <img src="./img/menu/drink_switcel.jpg">
                 </div>
                 <div class="ingredients">
                     <span>생강, 강황, 레몬, 애플 사이다 비니거, 메이플 시럽, 탄산수, 민트.<br>
@@ -721,7 +754,7 @@
                 </div>
             </div>
                 <div class="menu_pic">
-                    <img src="./img/main/menu/drink_lemonade.jpg">
+                    <img src="./img/menu/drink_lemonade.jpg">
                 </div>
                 <div class="ingredients">
                     <span>레몬, 비정제 사탕수수 원당, 홈메이드 바질 시럽, 탄산수.<br>
@@ -749,7 +782,7 @@
 
             </div>
                 <div class="menu_pic">
-                    <img src="./img/main/menu/drink_lemonade.jpg">
+                    <img src="./img/menu/drink_lemonade.jpg">
                 </div>
                 <div class="ingredients">
                     <span>바질, 레몬, 비정제 사탕수수 원당, 홈메이드 바질 시럽, 탄산수.<br>
@@ -774,7 +807,7 @@
 
             </div>
                 <div class="menu_pic">
-                    <img src="./img/main/menu/empty02.jpg">
+                    <img src="./img/menu/empty02.jpg">
                 </div>
                 <div class="ingredients">
                     <span>딸기, 레몬, 비정제 사탕수수 원당, 홈메이드 바질 시럽, 탄산수.<br>
@@ -794,7 +827,7 @@
                 </div>
             </div>
                 <div class="menu_pic">
-                    <img src="./img/main/menu/drink_kale_coco.jpg">
+                    <img src="./img/menu/drink_kale_coco.jpg">
                 </div>
                 <div class="ingredients">
                     <span>케일, 꿀, 코코넛 밀크, 코코넛 플레이크.<br>
@@ -817,7 +850,7 @@
                 </div>
             </div>
                 <div class="menu_pic">
-                    <img src="./img/main/menu/drink_beet_smoothie.jpg">
+                    <img src="./img/menu/drink_beet_smoothie.jpg">
                 </div>
                 <div class="ingredients">
                     <span>비트, 사과, 오렌지, 망고, 생강과 계피가루.<br>
@@ -837,7 +870,7 @@
                 </div>
             </div>
                 <div class="menu_pic">
-                    <img src="./img/main/menu/drink_avo_smoothie.jpg">
+                    <img src="./img/menu/drink_avo_smoothie.jpg">
                 </div>
                 <div class="ingredients">
                     <span>아보카도, 망고, 오트밀크, 꿀, 홈메이드 바질 시럽, 소금, 후추, 피칸, 피스타치오.<br>
@@ -851,11 +884,19 @@
     </div>
     </div>
 
-       <script>
-        function myFunction(x) {
-          x.classList.toggle("change");
-        }
-        </script>
+    <script>
+
+        $(document).ready(function(){
+
+        });
+
+        $('.ham').on('click', function(){
+            $(this).toggleClass('change');
+            $('.navi').toggleClass('on');
+        });
+
+
+    </script>
 
 
 </body>
