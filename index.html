@@ -16,9 +16,12 @@
 </head>
 
 <style>
-    header { 
+
+header { 
     background: #e6321e;
 }
+
+
 
 .bar1, .bar2, .bar3 {
     background-color: #f0e6d2;
@@ -38,16 +41,35 @@
     border: solid #f0e6d2 1px;
 }
 
-.navi-item {
+.info-order {
+    background: #e6321e;
+    border: solid #f0e6d2 1px;
+}
+
+.info-line {
+    border: solid #f0e6d2 1px;
+}
+
+.info-order-item {
+    color: #f0e6d2;
+}
+
+.marquee {
+    color: #f0e6d2;
+}
+
+.navi-item, .navi-wide-item, .btn, .insta-link {
     color: #f0e6d2;
     text-decoration-color: #f0e6d2;
 
 }
 
-.navi-item a {
+.navi-item a, .navi-wide-item a, .btn a, insta-link a {
     color: #f0e6d2;
     text-decoration-color: #f0e6d2;
 }
+
+
 
 </style>
 
@@ -56,7 +78,97 @@
 <body>
     <div class="wrapper">
 
-      <header>
+        <header class="pc_ver">
+            <div class="header-inner pc_ver">
+
+
+                <div class="navi-wide pc_ver">
+
+                    <div class="navi-wide-item home pc_ver">
+                        <a href="index.html">
+                            <span>Salad Seller</span>
+                        </a>
+                    </div>
+
+                    <div class="navi-wide-item pc_ver">
+                        <a href="menu.html">
+                            Menu
+                        </a>
+                    </div>
+                   
+                    <div class="navi-wide-item pc_ver">
+                        <a href="https://smartstore.naver.com/cellartorafter">
+                            Shop
+                        </a>
+                    </div>
+                    
+                    <div class="navi-wide-item pc_ver">
+                        <a href="news.html">
+                            News
+                        </a>
+                    </div>
+                    
+                    <div class="navi-wide-item pc_ver">
+                        <a href="info.html">
+                            Info
+                        </a>
+                    </div>
+
+            </div>
+
+            <div class="box-order pc_ver">
+                <div class="btn order">
+                    Order!!!
+                </div>
+
+                <div class="info-order pc_ver">
+
+                    <div class="marquee">
+                        <div><span>How to Order Salad Seller</span>
+                        <span>How to Order Salad Seller</span><span>How to Order Salad Seller</span>
+                    </div>
+                    </div>
+
+                    <div class="info-order-item">
+
+                        <div class="info-order-title">
+                            <a href="order.html">
+                                Pick-Up
+                            </a>
+                        </div>
+
+                        <div classs="info-order-sub">
+                            포장 주문
+                        </div>
+                    </div>
+                    <div class="info-line"></div>
+                    <div class="info-order-item">
+
+                        <div class="info-order-title">
+                            <a href="order.html">Delivery</a>
+                        </div>
+                        <div class="info-order-sub">
+                            배달 주문
+                        </div>
+                        <div class="info-order-link">
+                            <a href="https://baemin.me/sfwp_clr0">배달의민족 바로가기</a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+         
+    
+        
+
+        </div>
+
+            
+    </header>
+
+    <header class="mobile_ver">
             <div class="header-inner">
             <div class="menu-item ham">
                 <div class="bar1"></div>
@@ -75,7 +187,7 @@
                     <img src="./img/main/insta_main.svg"></a>
             </div>
 
-            <div class="navi">
+            <div class="navi mobile_ver">
                 <div class="navi-item">
                     <a href="menu.html">
                         Menu
@@ -103,22 +215,39 @@
                 </div>
             </div>
         </div>
-     </header>
-
-        <div class="main">
-        <div class="main-bg">
-            <img src="./img/main/bg.svg" alt="">
+    </header>
+    
+    <div class="insta-link pc_ver">
+        <div class="insta-btn">
+            <a href="https://www.instagram.com/saladseller/">
+                Instagram <img src="./img/main/insta_main.svg"></a>
         </div>
-        <div class="main-con">
-            <img src="./img/main/con.svg" alt="">
-        </div>
-        </div>
-    </div>
+        
     </div>
 
+    <div class="main">
+            <div class="main-bg mobile_ver">
+                <img src="./img/main/bg.svg" alt="">
+            </div>
+            <div class="main-con mobile_ver">
+                <img src="./img/main/con.svg" alt="">
+            </div>
 
-    <script>
+            <div class="main-wide pc_ver">
+                <img src="./img/main/main_wide.svg">
+            </div>
 
+    </div>
+
+   
+
+</div>
+
+</div>
+
+
+
+<script>
         $(document).ready(function(){
 
         });
@@ -126,9 +255,14 @@
         $('.ham').on('click', function(){
             $(this).toggleClass('change');
             $('.navi').toggleClass('on');
+        })
+
+        $('.btn').on('click', function(){
+            $(this).toggleClass('change');
+            $('.info-order').toggleClass('on');
         });
         
-    </script>
+</script>
 
 </body>
 </html>
