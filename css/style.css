@@ -703,18 +703,19 @@ ul  {
     
     .info-order-item {
         text-align: center;
-        height: 37%;
-        padding-top:60px;
+        height: 50%;
+        padding-top:0px;
     }
     
     .info-line {
         border-top: solid black 1px;
-        margin: 20px 20px 10px 20px;
+        margin: 0 20px 0 20px;
     }
 
     .info-order-title {
         text-align: center;
         width: 100%;
+        padding-top: 60px;
     }
   
     .info-order-item + .info-order-item {
