@@ -30,30 +30,31 @@
                             <span>Salad Seller</span>
                         </a>
                     </div>
+                        <div class="navi-wide-item pc_ver">
+                            <a href="menu.html">
+                                Menu
+                            </a>
+                        </div>
+                       
+                        <div class="navi-wide-item pc_ver">
+                            <a href="https://smartstore.naver.com/cellartorafter">
+                                Shop
+                            </a>
+                        </div>
+                        
+                        <div class="navi-wide-item pc_ver">
+                            <a href="news.html">
+                                News
+                            </a>
+                        </div>
+                        
+                        <div class="navi-wide-item pc_ver">
+                            <a href="info.html">
+                                Info
+                            </a>
+                        </div>
 
-                    <div class="navi-wide-item pc_ver">
-                        <a href="menu.html">
-                            Menu
-                        </a>
-                    </div>
-                   
-                    <div class="navi-wide-item pc_ver">
-                        <a href="https://smartstore.naver.com/cellartorafter">
-                            Shop
-                        </a>
-                    </div>
                     
-                    <div class="navi-wide-item pc_ver">
-                        <a href="news.html">
-                            News
-                        </a>
-                    </div>
-                    
-                    <div class="navi-wide-item pc_ver">
-                        <a href="info.html">
-                            Info
-                        </a>
-                    </div>
 
                  </div>
 
@@ -85,7 +86,7 @@
                      <div class="info-order-item">
 
                         <div class="info-order-title">
-                            <a href="order.html">Delivery</a>
+                            <a href="order.html#delivery">Delivery</a>
                         </div>
                         <div class="info-order-sub">
                             배달 주문
@@ -171,7 +172,7 @@
             
                 <div class="imgbtn">
                     <span class="imgbtn-wrapper">
-                        <div id="imgbtn">
+                        <div id="imgbtn" style="cursor: pointer;">
                             Close all images
                         </div>
                     </span>
@@ -203,7 +204,7 @@
                     </div>
                     <div class="item_tag">
                         <div class="price">
-                           11,500원
+                           <span>11,500원</span>
                         </div>
                         <div class="sticker">
                          <span class="vegan">Vegan</span>
@@ -623,7 +624,7 @@
 
             </div>
 
-            <div class="add_detail">
+            <div class="add_detail mobile_ver">
                 다른 재료들도 추가할 수 있습니다.<br>
                 You can add other ingredients.
                 <br><br>
@@ -631,6 +632,19 @@
                 We make all the soups, dressings, mayonnaise, pesto and ricotta cheese, hummus ourselves.
                 <br><br>
                 원산지 표시: 닭 안심, 돼지고기 국산
+            </div>
+
+            <div class="add_detail pc_ver">
+                <div class="add_detail_box">
+                    다른 재료들도 추가할 수 있습니다.<br>
+                You can add other ingredients.
+                <br><br>
+                수프, 드레싱, 마요네즈, 페스토, 리코타 치즈, 후무스는 매장에서 직접 만듭니다.<br>
+                We make all the soups, dressings, mayonnaise, pesto and ricotta cheese, hummus ourselves.
+                <br><br>
+                원산지 표시: 닭 안심, 돼지고기 국
+                </div>
+                
             </div>
 
         </div>
@@ -1011,9 +1025,15 @@ $(document).ready(function(){
     });
 
     $('.btn').on('click', function(){
-        $(this).toggleClass('change');
-        $('.info-order').toggleClass('on');
-    });
+                $(this).toggleClass('change');
+                $('.info-order').toggleClass('on');
+                
+                if($(this).hasClass('change')){
+                    $(this).text('Close');
+                }else{
+                    $(this).text('Order!!!');
+                }
+            });
 
     // $("#imgbtn").click(function () {
     //             if (this.value == "Show all images") this.value = "Close all images";
@@ -1033,7 +1053,7 @@ $(document).ready(function(){
     });
 
     $('.item_top').click(function () {
-            $(this).siblings('.menu_pic').slideToggle(100);
+            $(this).siblings('.menu_pic').slideToggle(200);
     });
 });
 

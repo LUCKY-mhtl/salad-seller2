@@ -83,7 +83,7 @@
                     <div class="info-order-item">
 
                         <div class="info-order-title">
-                            <a href="order.html">Delivery</a>
+                            <a href="order.html#delivery">Delivery</a>
                         </div>
                         <div class="info-order-sub">
                             배달 주문
@@ -309,9 +309,17 @@
     })
 
     $('.btn').on('click', function(){
-        $(this).toggleClass('change');
-        $('.info-order').toggleClass('on');
-    });
+                $(this).toggleClass('change');
+                $('.info-order').toggleClass('on');
+                
+                if($(this).hasClass('change')){
+                    $(this).text('Close');
+                }else{
+                    $(this).text('Order!!!');
+                }
+            });
+
+
     
 </script>
 

@@ -90,30 +90,32 @@ header {
                         </a>
                     </div>
 
-                    <div class="navi-wide-item pc_ver">
-                        <a href="menu.html">
-                            Menu
-                        </a>
-                    </div>
-                   
-                    <div class="navi-wide-item pc_ver">
-                        <a href="https://smartstore.naver.com/cellartorafter">
-                            Shop
-                        </a>
-                    </div>
-                    
-                    <div class="navi-wide-item pc_ver">
-                        <a href="news.html">
-                            News
-                        </a>
-                    </div>
-                    
-                    <div class="navi-wide-item pc_ver">
-                        <a href="info.html">
-                            Info
-                        </a>
-                    </div>
 
+                        <div class="navi-wide-item pc_ver">
+                            <a href="menu.html">
+                                Menu
+                            </a>
+                        </div>
+                       
+                        <div class="navi-wide-item pc_ver">
+                            <a href="https://smartstore.naver.com/cellartorafter">
+                                Shop
+                            </a>
+                        </div>
+                        
+                        <div class="navi-wide-item pc_ver">
+                            <a href="news.html">
+                                News
+                            </a>
+                        </div>
+                        
+                        <div class="navi-wide-item pc_ver">
+                            <a href="info.html">
+                                Info
+                            </a>
+                        </div>
+    
+                    
             </div>
 
             <div class="box-order pc_ver">
@@ -144,7 +146,7 @@ header {
                     <div class="info-order-item">
 
                         <div class="info-order-title">
-                            <a href="order.html">Delivery</a>
+                            <a href="order.html#delivery">Delivery</a>
                         </div>
                         <div class="info-order-sub">
                             배달 주문
@@ -261,9 +263,18 @@ header {
         })
 
         $('.btn').on('click', function(){
-            $(this).toggleClass('change');
-            $('.info-order').toggleClass('on');
-        });
+                $(this).toggleClass('change');
+                $('.info-order').toggleClass('on');
+                
+                if($(this).hasClass('change')){
+                    $(this).text('Close');
+                }else{
+                    $(this).text('Order!!!');
+                }
+            });
+
+
+
         
 </script>
 
