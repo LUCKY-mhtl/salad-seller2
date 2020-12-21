@@ -715,10 +715,9 @@ ul  {
         position: absolute;
         top: 100%;
         right: 40px;
-        width: 30%;
-        min-width: 380px;
-        min-height: 600px;
-        overflow-y: auto;
+        width: 25%;
+        min-width: 340px;
+        min-height: 500px;
         height: 74vh;
         visibility: hidden;
         transition: opacity 0.2s linear 0.1s, visibility 0.4s linear;
