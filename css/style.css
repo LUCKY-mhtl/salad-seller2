@@ -24,7 +24,7 @@ a:focus, a:link {
 
 html, body {font-family: 'GT America', 'Noto Sans KR', sans-serif !important;}
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 425px) {
         /* common :: 요소들 중 클래스 이름에 넣으면 숨킬 수 잇음 */
         .pc_ver {
             display: none !important;
@@ -614,8 +614,10 @@ ul  {
     width: 95%;
 }
 
+
+
 /* tablet 1 */
-@media screen and (min-width:481px) {
+@media screen and (min-width:768px) {
     /* common */
     .pc_ver {
         display: none !important;
@@ -623,12 +625,13 @@ ul  {
     .tablet_ver {
         display: block !important;
     }
+
     .mobile_ver {
         display: none !important;
     }
 
     header {
-        height: 80px;
+        height: 60px;
     }
 
     .header-inner {
@@ -645,11 +648,11 @@ ul  {
 
     .btn {
         float: right;
-        font-size: 20pt;
+        font-size: 18pt;
     }
 
     .btn a {
-        font-size: 20pt;
+        font-size: 18pt;
     }
 
     .navi-wide-item {
@@ -662,7 +665,7 @@ ul  {
     }
 
     .navi-wide-item a {
-        font-size: 20pt;
+        font-size: 18pt;
     }
 
     .container {
@@ -677,7 +680,7 @@ ul  {
     }
 
     .home span {
-        font-size: 20pt;
+        font-size: 18pt;
         letter-spacing: -1px;
     }
 
@@ -691,16 +694,16 @@ ul  {
 
     .insta-btn {
         float: right;
-        margin-right: 40px;
-        margin-bottom: 40px;
+        margin-right: 20px;
+        margin-bottom: 20px;
     }
 
     .insta-link img{
-        width: 30px;
+        width: 24px;
     }
 
     .insta-link a {
-        font-size: 20pt;
+        font-size: 18pt;
         letter-spacing: -1;
     }
 
@@ -709,10 +712,10 @@ ul  {
         position: absolute;
         top: 100%;
         right: 40px;
-        width: 25%;
-        min-width: 340px;
+        width: 24%;
+        min-width: 300px;
         min-height: 500px;
-        height: 74vh;
+        height: 70vh;
         visibility: hidden;
         transition: opacity 0.2s linear 0.1s, visibility 0.4s linear;
         opacity: 0;
@@ -743,7 +746,7 @@ ul  {
     .info-order-title {
         text-align: center;
         width: 100%;
-        padding-top: 60px;
+        padding-top: 40px;
     }
 
     .info-order-item + .info-order-item {
@@ -802,9 +805,9 @@ ul  {
         position: absolute;
         top: 50%;
         left: 50%;
-        margin-top: -24%;
-        margin-left: -30%;
-        width: 75%;
+        margin-top: -25%;
+        margin-left: -35%;
+        width: 80%;
         animation: 2s cubic-bezier(0.33, -0.12, 0.63, 1.14) infinite alternate moveit;
         transform-origin: center bottom;
     }
@@ -875,6 +878,10 @@ ul  {
         z-index: 200;
     }
 
+    .info_txt {
+        padding-bottom: 20px;
+    }
+
     .info_txt_kr {
         width: 100%;
         float: left;
@@ -897,7 +904,7 @@ ul  {
 
     .order_title {
         width: 100%;
-        margin-top: 100px;
+        margin-top: 80px;
         font-size: 84px;
     }
 
@@ -917,11 +924,7 @@ ul  {
     }
 
     .detail_txt {
-        padding-left: 18px;
-    }
-
-    .detail_txt span{
-        font-size: 14pt;
+        padding-left: 16px;
         word-break: keep-all;
         line-height: 1.65;
     }
@@ -945,7 +948,7 @@ ul  {
         height: 50px;
         overflow: hidden;
         position: relative;
-        top: 100px;
+        top: 80px;
     }
 
     .marquee-wide div {
@@ -960,7 +963,7 @@ ul  {
     .marquee-wide span{
         font-size: 14pt;
         float: left;
-        width: 20%;
+        width: 24%;
     }
 
     @keyframes marquee-wide {
@@ -975,16 +978,17 @@ ul  {
         width: 80%;
     }
 
-
-    .order-contents{
-        border-top: solid black 1px;
-        float: left;
-        width: 100%;
-        margin-bottom: 40px;
+   
+    .order_contents{
+    border-top: solid black 1px;
+    padding: 20px 0 0 0;
+    float: left;
+    margin-bottom: 0;
     }
 
+
     .order_contents span{
-        font-size: 14pt;
+        font-size: 12pt;
     }
 
     .order_contents_detail {
@@ -992,26 +996,32 @@ ul  {
         position: relative;
         left: 30%;
         width: 70%;
+        padding-bottom: 20px;
     }
 
     .baemin_link {
         float: left;
         position: relative;
-        width: 50%;
+        width: 40%;
         margin-top: 35%;
-        padding-left: 40px;
+        padding-left: 0px;
+    }
+
+    .baemin_link span {
+        font-size: 14pt;
+        text-align: left;
     }
 
     .delivery_illust {
         float: left;
         position: relative;
-        width: 50%;
+        width: 55%;
+        padding-bottom: 40px;
     }
 
     .delivery_illust img{
-        width: 70%;
         top: 60px;
-        margin-bottom: 60px;
+        margin-bottom: 40px;
     }
 
     @keyframes moveit {
@@ -1029,15 +1039,15 @@ ul  {
         transform-origin: center bottom;
     }
 
-    .baemin_link span {
-        font-size: 18pt;
-        text-align: left;
-    }
 
 }
 
+
+
+
+
 /* pc 1 */
-@media screen and (min-width:1367px) {
+@media screen and (min-width:1280px) {
     /* common */
     .pc_ver {
         display: block !important;
@@ -1057,7 +1067,7 @@ ul  {
         float: left;
         width: 100%;
         height: 100%;
-        padding: 20px 40px;
+        padding: 20px 20px;
     }
 
     .navi_wide {
@@ -1068,7 +1078,6 @@ ul  {
     .btn {
         float: right;
         font-size: 28pt;
-
     }
 
     .btn a {
@@ -1092,7 +1101,7 @@ ul  {
         width: 100%;
         height: auto;
         float: left;
-        padding: 0 20px 0 20px;
+        padding: 0 0px 0 20px;
     }
 
     .home {
@@ -1398,10 +1407,9 @@ ul  {
 
     .info_box {
         float: left;
-        width: 15%;
+        width: 14%;
         position: fixed;
         bottom: 0;
-        padding-left: 20px;
         word-break: keep-all;
         z-index: 200;
     }
@@ -1410,13 +1418,13 @@ ul  {
         width: 100%;
         float: left;
         margin-bottom: 20px;
-        font-size: 7pt;
+        font-size: 9pt;
     }
 
     .info_txt_en {
         float: left;
         width: 100%;
-        font-size: 7pt;
+        font-size: 9pt;
         line-height: 1.3;
     }
 

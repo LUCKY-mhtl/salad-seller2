@@ -225,9 +225,7 @@ let menuTempSalad = `
                         </div>
                         <div class="seasonal">* Seasonal: Winter, Spring</div>
                     </div>
-                    <div class="menu_pic">
-                        <img src="./img/menu/empty01.jpg">
-                    </div>
+                    
                     <div class="ingredients">
                         <span>루꼴라, 시금치, 딸기, 블루베리, 리코타 치즈, 건청포도, 피스타치오, 피칸, 아몬드, 꿀, 발사믹 글레이즈, 발사믹 드레싱.<br>
                         Arugula, Spinach, Strawberry, Blueberry, Ricotta Cheese, Blue Raisin, Pistachio, Pecan, Almond, Honey, Balsamic Glaze, Balsamic Dressing.</span>
