@@ -24,7 +24,7 @@ a:focus, a:link {
 
 html, body {font-family: 'GT America', 'Noto Sans KR', sans-serif !important;}
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
         /* common :: 요소들 중 클래스 이름에 넣으면 숨킬 수 잇음 */
         .pc_ver {
             display: none !important;
@@ -609,7 +609,7 @@ ul  {
 
 
 /* tablet 1 */
-@media screen and (min-width:426px) {
+@media screen and (min-width:500px) {
     /* common */
     .pc_ver {
         display: none !important;
