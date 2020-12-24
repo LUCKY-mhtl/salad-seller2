@@ -381,7 +381,7 @@
 
         <div class="imgbtn">
             <div class="imgbtn-wrapper">
-                <div id="imgbtn" style="cursor: pointer;">
+                <div class="imgbtn" style="cursor: pointer;">
                     Close all images
                 </div>
             </div>
@@ -396,13 +396,13 @@
 
     <div class="imgbtn">
         <div class="imgbtn-wrapper">
-            <div id="imgbtn" style="cursor: pointer;">
+            <div class="imgbtn" style="cursor: pointer;">
                 Close all images
             </div>
         </div>
         <!-- D:: 오류 수정 -->
     </div>
-</div>
+    </div>
 
     <div class="menu_option tablet_ver">
         <span><a href="./files/menu_vertical.pdf" target="_blank">
@@ -411,7 +411,7 @@
 
     <div class="imgbtn">
         <div class="imgbtn-wrapper">
-            <div id="imgbtn" style="cursor: pointer;">
+            <div class="imgbtn" style="cursor: pointer;">
                 Close all images
             </div>
         </div>
@@ -1328,7 +1328,7 @@
         //             else this.value = "Show all images";
         // });
 
-        $('#imgbtn').click(function () {
+        $('.imgbtn').click(function () {
             // var state = $('.imghide').css('display');
             $(this).toggleClass('on');
             if ($(this).hasClass('on')) {

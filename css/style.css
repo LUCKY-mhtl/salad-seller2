@@ -851,12 +851,11 @@ ul  {
         background: #fff;
     }
 
-    #imgbtn {
+    .imgbtn-on {
         display: inline-block;
-        font-size: 14pt;
     }
     
-    #imgbtn:hover {
+    .imgbtn-on:hover {
         text-decoration: underline 2px solid black;
     }
 
@@ -1402,11 +1401,11 @@ ul  {
         line-height: 1.5;
     }
 
-    #imgbtn a:hover {
+    .imgbtn-on a:hover {
         text-decoration: underline 2px solid black;
     }
 
-    #imgbtn {
+    .imgbtn-on {
         display: inline-block;
         font-size: 14pt;
     }
@@ -1826,11 +1825,11 @@ ul  {
         font-size: 18pt;
     }
 
-    #imgbtn a:hover {
+    .imgbtn-on a:hover {
         text-decoration: underline 2px solid black;
     }
 
-    #imgbtn {
+    .imgbtn-on {
         display: inline-block;
         font-size: 18pt;
         line-height: 1.4;
