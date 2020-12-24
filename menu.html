@@ -381,7 +381,7 @@
 
         <div class="imgbtn">
             <div class="imgbtn-wrapper">
-                <div class="imgbtn" style="cursor: pointer;">
+                <div class="imgbtn-on" style="cursor: pointer;">
                     Close all images
                 </div>
             </div>
@@ -396,7 +396,7 @@
 
     <div class="imgbtn">
         <div class="imgbtn-wrapper">
-            <div class="imgbtn" style="cursor: pointer;">
+            <div class="imgbtn-on" style="cursor: pointer;">
                 Close all images
             </div>
         </div>
@@ -411,7 +411,7 @@
 
     <div class="imgbtn">
         <div class="imgbtn-wrapper">
-            <div class="imgbtn" style="cursor: pointer;">
+            <div class="imgbtn-on" style="cursor: pointer;">
                 Close all images
             </div>
         </div>
@@ -1328,7 +1328,7 @@
         //             else this.value = "Show all images";
         // });
 
-        $('.imgbtn').click(function () {
+        $('.imgbtn-on').click(function () {
             // var state = $('.imghide').css('display');
             $(this).toggleClass('on');
             if ($(this).hasClass('on')) {
