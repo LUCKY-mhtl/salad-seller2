@@ -274,12 +274,14 @@ a {
     position: absolute;
     width: 100%;
     z-index: 10;
+    top: 60px;
 }
 
 .marquee div {
     display: block;
     width: 200%;
     height: 60px;
+    
     position: absolute;
     overflow: hidden;
     animation: marquee 5s linear infinite;
@@ -307,9 +309,9 @@ a {
     width: 75%;
     float: left;
     position: relative;
-    top: 80px;
+    top: 120px;
     left: 10%;
-    margin-bottom: 100px;
+    margin-bottom: 130px;
 }
 @keyframes moveit {
     from {
@@ -388,9 +390,9 @@ a {
     width: 80%;
     float: left;
     position: relative;
-    top: 80px;
+    top: 120px;
     left: 10%;
-    margin-bottom: 100px;
+    margin-bottom: 130px;
 }
 
 .news_contents{
